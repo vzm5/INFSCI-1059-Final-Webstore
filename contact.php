@@ -13,6 +13,16 @@
         <ul>
             <li>simple@simpleshop.com</li>
             <li>@simpleshop</li>
+        </ul>
+    </div>
+    <div>
+        <p>Customer Service:</p>
+        <div>
+            <ul>
+                <li><a href="lookup.php">Check Your Order Status</a></li>
+            <ul>
+        </div>
+        
     </div>
 </div>
 

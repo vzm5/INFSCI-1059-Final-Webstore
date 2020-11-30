@@ -1,4 +1,17 @@
-<div id="footer"></div>
+
+<nav class="navbar fixed-bottom justify-content-center navbar-expand-sm navbar-light bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.php">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lookup.php">Order Status</a>
+          </li>
+        </ul>
+    </nav>
 
     <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,7 +1,9 @@
+
 <?php
+    //images from Pexels; Karolina Grabowska. Free to use stock images.
     include 'header.php';
     include 'connection.php';
-    print_r($_SESSION['cart_items']);
+    session_start();
     //handle shopping cart
     if(!empty($_GET['action'])){
         switch($_GET['action']){
@@ -78,8 +80,12 @@
                     ?>
                     <div class="col-lg-3 column productbox">
                         <form method="post" action="index.php?action=add&product_id=<?php echo $product_id;?>">
-                        <img src="<?php echo $img;?>" class="w-100 p-3">
-                        <div class="producttitle"><?php echo $name;?></div>
+                        <a href="viewitem.php?id=<?php echo $product_id?>">
+                            <img src="<?php echo $img;?>" class="w-100 p-3">
+                        </a>
+                        <div class="producttitle">
+                            <a href="viewitem.php?id=<?php echo $product_id?>" style="color: black;"><?php echo $name?></a>
+                        </div>
                         <div class="productprice">
                             <div class="pull-right"><input type="submit" value="Add to Cart" class="btnAddAction"/>
                                 <select name="quantity" id="quantity">

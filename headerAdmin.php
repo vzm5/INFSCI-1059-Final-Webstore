@@ -18,7 +18,7 @@
     <h1>Hello, Simple Shop!</h1>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="index.php">Hello, Simple</a>
+        <a class="navbar-brand" href="index.php">Hello, Admin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,33 +26,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="vieworders.php">View Orders<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.php">Contact Us<span class="sr-only">(current)</span></a>
-            </li>
-            
-            
-            <li class="nav-item">
-                <a class="nav-link" href="viewcart.php">Cart<span class="sr-only">(current)</span></a>   
-            </li>
-            <li class="nav-item">
-                <span class="badge badge-secondary badge-pill">
-                    <?php
-                        
-                        foreach($_SESSION['cart_item'] as $item){
-                            $item_qty_total += $item['quantity'];
-                        }
-                        echo $item_qty_total;
-                        
-                        
-                    ?>
-                </span>
-            </li>
-            
+                <a class="nav-link" href="signout.php">Sign Out<span class="sr-only">(current)</span></a>
+            </li>   
             </ul>
             </form>
         </div>
